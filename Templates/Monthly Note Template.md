@@ -1,0 +1,30 @@
+---
+date:
+  - "{ date:YYYY-MM-DD }":
+tags:
+  - monthly
+---
+## Entries
+
+![[Daily.base#Monthly]]
+
+  
+🎯 **Monthly Goals**  
+
+- **...**
+
+  
+🎯 **Weekly Goals**  
+
+1. **...**
+
+  
+--------------------
+**Agenda (Follow to the T.):**  
+
+1. Review / Set Monthly Goals every week
+2. Set 1 to 3 Weekly Goals
+3. Assess Weekly goals against Monthly goals
+4. Set 1 to 3 Daily goals every-day
+5. Make DUA
+6. Act like you've already received your DUAs from Allah

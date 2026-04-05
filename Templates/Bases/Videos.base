@@ -1,0 +1,35 @@
+filters:
+  and:
+    - categories.contains(link("Videos"))
+    - '!file.name.contains("Template")'
+formulas:
+  Untitled: ""
+properties:
+  file.name:
+    displayName: Game
+  note.rating:
+    displayName: Rating
+  note.last:
+    displayName: Last
+views:
+  - type: table
+    name: All Videos
+    order:
+      - file.basename
+      - maker
+      - url
+      - date
+      - formula.Untitled
+  - type: table
+    name: Maker
+    filters:
+      and:
+        - list(maker).contains(this)
+    order:
+      - file.basename
+      - maker
+      - url
+      - date
+    sort:
+      - property: genre
+        direction: ASC

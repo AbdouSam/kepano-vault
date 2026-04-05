@@ -1,0 +1,23 @@
+filters:
+  and:
+    - categories.contains(link("Tutorials"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Game
+  note.rating:
+    displayName: Rating
+  note.last:
+    displayName: Last
+views:
+  - type: table
+    name: All Tutorials
+    order:
+      - file.basename
+      - categories
+      - topics
+    sort:
+      - property: categories
+        direction: ASC
+    columnSize:
+      file.basename: 179
