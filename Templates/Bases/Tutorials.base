@@ -4,7 +4,7 @@ filters:
     - '!file.name.contains("Template")'
 properties:
   file.name:
-    displayName: Game
+    displayName: Name
   note.rating:
     displayName: Rating
   note.last:

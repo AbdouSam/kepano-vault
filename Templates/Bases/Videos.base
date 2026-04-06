@@ -2,11 +2,9 @@ filters:
   and:
     - categories.contains(link("Videos"))
     - '!file.name.contains("Template")'
-formulas:
-  Untitled: ""
 properties:
   file.name:
-    displayName: Game
+    displayName: Name
   note.rating:
     displayName: Rating
   note.last:
@@ -15,18 +13,20 @@ views:
   - type: table
     name: All Videos
     order:
-      - file.basename
+      - file.name
       - maker
       - url
       - date
-      - formula.Untitled
+    columnSize:
+      file.name: 208
+      note.url: 354
   - type: table
     name: Maker
     filters:
       and:
         - list(maker).contains(this)
     order:
-      - file.basename
+      - file.name
       - maker
       - url
       - date

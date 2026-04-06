@@ -1,0 +1,21 @@
+filters:
+  and:
+    - note.categories.contains(link("Workouts"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Name
+  note.body-parts:
+    displayName: Body Parts
+  note.last:
+    displayName: Last
+views:
+  - type: table
+    name: Table
+  - type: table
+    name: Type
+    order:
+      - file.name
+      - body-parts
+    columnSize:
+      file.name: 219
