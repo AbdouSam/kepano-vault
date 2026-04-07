@@ -7,12 +7,28 @@ properties:
     displayName: Name
   note.created:
     displayName: Created
+  note.topics:
+    displayName: Topics
 views:
   - type: table
     name: Evergreen
     order:
       - file.name
+      - topics
       - created
     sort:
-      - column: note.created
+      - property: created
+        direction: DESC
+    columnSize:
+      file.name: 240
+  - type: table
+    name: By Topic
+    filters:
+      and:
+        - list(topics).contains(this)
+    order:
+      - file.name
+      - created
+    sort:
+      - property: created
         direction: DESC

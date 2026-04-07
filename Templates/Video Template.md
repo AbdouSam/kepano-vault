@@ -1,11 +1,14 @@
 ---
-categories: 
+categories:
   - "[[Videos]]"
-created: {{date}}
-title: 
-url: 
-maker: 
-date: {{date:YYYY-MM-DD}}
+created:
+  "{ date }":
+title:
+url:
+maker:
+date:
+  "{ date:YYYY-MM-DD }":
 genre: []
-topics: 
+topics:
+tags:
 ---

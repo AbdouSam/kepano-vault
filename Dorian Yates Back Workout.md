@@ -1,16 +1,23 @@
 ---
 categories:
   - "[[Workouts]]"
-tags:
-  - activity
-date: 2026-04-06
+source:
+  - "[[Dorian Yates]]"
 body-parts:
   - back
+domain: strength
+tags:
+  - activity
+  - workouts
 ---
+
 - Nautilis Pull over
-- backhand pull downs
+- Backhand pull downs
 - Heavy barbell rows
-- one hand rows machine
-- back flys
-- back extensions with weight
-- 
+- One hand rows machine
+- Back flys
+- Back extensions with weight
+
+## Sessions
+
+![[Workout Sessions.base#By Workout]]

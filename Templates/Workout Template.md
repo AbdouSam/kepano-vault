@@ -1,11 +1,13 @@
 ---
 categories:
   - "[[Workouts]]"
+source: []
+body-parts: []
+domain: 
 tags:
   - activity
-date:
-  "{ date:YYYY-MM-DD }":
-body-parts:
-  - 
-maker: "[[Dorian Yates]]"
 ---
+
+## Sessions
+
+![[Workout Sessions.base#By Workout]]

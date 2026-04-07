@@ -17,7 +17,7 @@ properties:
   note.last:
     displayName: Last
 views:
-  - type: map
+  - type: table
     name: Map
     order:
       - file.name
@@ -25,7 +25,6 @@ views:
       - loc
       - type
       - last
-      - formula.Icon
     sort:
       - property: last
         direction: DESC
@@ -33,11 +32,7 @@ views:
         direction: ASC
       - property: loc
         direction: ASC
-    defaultZoom: 2
-    coordinates: note.coordinates
-    markerIcon: formula.Icon
-    markerColor: formula.Color
-  - type: map
+  - type: table
     name: Location
     filters:
       or:
@@ -45,23 +40,20 @@ views:
         - list(loc).containsAny(this.related)
     order:
       - file.name
+      - rating
+      - loc
+      - type
     sort:
       - property: last
         direction: DESC
       - property: type
-        direction: ASC
-      - property: loc
         direction: ASC
     columnSize:
       file.name: 162
       note.rating: 84
       note.loc: 145
       note.type: 199
-    coordinates: note.coordinates
-    defaultZoom: 10.6
-    markerIcon: formula.Icon
-    markerColor: formula.Color
-  - type: map
+  - type: table
     name: Type
     filters:
       and:
@@ -70,20 +62,14 @@ views:
       - file.name
       - rating
       - type
-      - formula.Color
+      - loc
     sort:
       - property: last
         direction: DESC
       - property: type
-        direction: ASC
-      - property: loc
         direction: ASC
     columnSize:
       file.name: 162
       note.rating: 84
       note.loc: 145
       note.type: 199
-    coordinates: note.coordinates
-    defaultZoom: 3.1
-    markerIcon: formula.Icon
-    markerColor: formula.Color

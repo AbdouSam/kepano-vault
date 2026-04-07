@@ -7,15 +7,44 @@ properties:
     displayName: Name
   note.body-parts:
     displayName: Body Parts
-  note.last:
-    displayName: Last
+  note.source:
+    displayName: Source
+  note.domain:
+    displayName: Domain
 views:
   - type: table
-    name: Table
-  - type: table
-    name: Type
+    name: All Workouts
     order:
       - file.name
       - body-parts
+      - source
+      - domain
+    sort:
+      - property: file.name
+        direction: ASC
     columnSize:
-      file.name: 219
+      file.name: 220
+  - type: table
+    name: By Body Part
+    filters:
+      and:
+        - list(body-parts).contains(this)
+    order:
+      - file.name
+      - body-parts
+      - source
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: By Source
+    filters:
+      and:
+        - list(source).contains(this)
+    order:
+      - file.name
+      - body-parts
+      - domain
+    sort:
+      - property: file.name
+        direction: ASC

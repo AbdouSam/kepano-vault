@@ -1,0 +1,60 @@
+filters:
+  and:
+    - categories.contains(link("Workout Sessions"))
+    - '!file.name.contains("Template")'
+properties:
+  file.name:
+    displayName: Session
+  note.date:
+    displayName: Date
+  note.workout:
+    displayName: Workout
+  note.body-parts:
+    displayName: Body Parts
+  note.duration:
+    displayName: Duration
+  note.rating:
+    displayName: Rating
+views:
+  - type: table
+    name: All Sessions
+    order:
+      - file.name
+      - date
+      - workout
+      - body-parts
+      - duration
+      - rating
+    sort:
+      - property: date
+        direction: DESC
+    columnSize:
+      file.name: 220
+  - type: table
+    name: By Workout
+    filters:
+      and:
+        - list(workout).contains(this)
+    order:
+      - file.name
+      - date
+      - body-parts
+      - duration
+      - rating
+    sort:
+      - property: date
+        direction: DESC
+  - type: table
+    name: By Body Part
+    filters:
+      and:
+        - list(body-parts).contains(this)
+    order:
+      - file.name
+      - date
+      - workout
+      - duration
+      - rating
+    sort:
+      - property: date
+        direction: DESC
