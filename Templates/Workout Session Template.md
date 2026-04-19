@@ -10,10 +10,14 @@ rating:
 
 ## Performance
 
-| Exercise | Sets | Reps | Weight |
-| -------- | ---- | ---- | ------ |
-|          |      |      |        |
+| Exercise | Sets |  Reps | Weight (Kg) | Comments |
+| -------- | ---- | ----- | ----------- | -------- |
+|          |      |       |             |          |
 
 ## Notes
 
 
+---------
+* Last reps: is the reps in the last set
+* Sets: Number of real sets, no warmup
+* 
